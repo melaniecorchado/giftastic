@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>TV Gifs Galore</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>TV Show Gifs</h1>
+
+        <!-- We'll be dumping our JSON contents in here -->
+        <div id="movie-view"></div>
+
+        <button id="button"></button>
+        <!--The form used to search for the show-->
+        <form id="showsform">
+          <label for="showinput">TV Shows Galore! Search here:</label>
+          <input type="text" id="showinput"><br>
+
+          <!-- This button will trigger our AJAX call -->
+          <input id="findshow" type="submit" value="TV Show Search">
+        </form>
+
+    <br><br>
+
+        <div id="gif">
+        </div>
+
+
+
+</div>
+
+</body>
+</html>
