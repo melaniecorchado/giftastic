@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//global variables
     var tvshows = ["Supernatural", "New Girl", "Friends", "Big Bang Theory", "Game Of Thrones"];
     var stillImg = [];
     var animateImg = [];
@@ -31,6 +32,7 @@ $(".television").click(function(){
 displayButton();
 showGif();
 
+//function to display the buttons and add buttons to screen
    function displayButton(){
 		for(var i = 0; i < tvshows.length; i++){
             var showBtn = $("<button>");
@@ -47,10 +49,8 @@ showGif();
         event.preventDefault();
         $("#button").empty();
 
-        // This line grabs the input from the textbox
         var tvGif = $("#showinput").val().trim();
 
-        // The movie from the textbox is then added to our array
         tvshows.push(tvGif);
 
         displayButton();
@@ -58,6 +58,7 @@ showGif();
 
       });
 
+//function to both animate and still the gifs
    function animate() {
       $(".jifs").on("click", function(){
         var index = $(this).attr("data-show");
