@@ -4,13 +4,26 @@ body {
 
 .container{
 	text-align: center;
+	font-size: 20px;
 	font-family:'Luckiest Guy', cursive;
 }
 
 #button{
-	
+
 } 
 
 #findshow{
 	font-size: 30px;
+}
+
+.display {
+		
+	float: left;
+}
+
+
+
+#gif {
+	margin: auto;
+	width: 90%;
 }
